@@ -9,15 +9,18 @@
 								<li><a href="<?=site_url('/store')?>"> All Stores </a></li>
 							</ul>
 						</li>
-						<li class="submenu"> <a href="#"><i class="fas fa-user"></i> <span> Transaction </span> <span class="menu-arrow"></span></a>
-							<ul class="submenu_class" style="display: none;">
-								<li><a href="all-transaction.html"> All Transactions </a></li>
-							</ul>
-						</li>
+
+						<li class="ProductRecords"> <a href="ProductRecords"><i class="fas fa-suitcase"></i> <span> Products </span></a></li>
+						   
 						<li class="submenu"> <a href=""><i class="fas fa-suitcase"></i> <span> Orders </span> <span class="menu-arrow"></span></a>
 							<ul class="submenu_class" style="display: none;">
 								<li><a href="<?=site_url('/all-order')?>"> All Orders </a></li>
                                 <li><a href="<?=site_url('/pending-orders')?>"> Pending Orders </a></li>
+							</ul>
+						</li>
+						<li class="submenu"> <a href="#"><i class="fas fa-user"></i> <span> Transaction </span> <span class="menu-arrow"></span></a>
+							<ul class="submenu_class" style="display: none;">
+								<li><a href="#"> All Transactions </a></li>
 							</ul>
 						</li>
                     </ul>

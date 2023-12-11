@@ -35,5 +35,9 @@ class Product_model extends Model {
             return true;
         }
     }
+    public function getInfo()
+    {
+        return $this->db->table('prod')->get_all();
+    }
 }
 ?>

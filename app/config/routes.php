@@ -45,9 +45,25 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 */
 $router->match('/register', 'LoginController::register','GET|POST');
 $router->get('/verify-email', 'LoginController::verifyEmail');
+
 $router->match('/', 'Welcome::index','GET|POST');
 $router->match('/store', 'Welcome::getstore','GET|POST');
+
 $router->match('/all-order', 'ProductController::showOrder','GET|POST');
 $router->match('/user', 'Welcome::user','GET|POST');
 $router->match('/user-add-order', 'ProductController::showProduct','GET|POST');
 $router->match('/login', 'LoginController::login','GET|POST');
+
+$router->match('/products', 'Welcome::index','GET|POST');
+$router->get('/ProductRecords', 'ProdController::index');
+
+//Routes for form
+$router->get('/add_prod', 'ProdController::add_prod');
+
+//add products
+$router->post('save', 'ProdController::add');
+// $router->post('/add_prod', 'ProdController::add');
+
+$router->post('ProdController/add', 'ProdController::add');
+
+$router->get('user-home', 'UserController::home');
